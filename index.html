@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doing in Wrong</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <button class="runawayButton" onclick="refreshPage()">Click to begin</button>
+    <canvas id="lineCanvas"></canvas>
+    <svg id="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" onclick="download()">
+        <path fill="none" stroke="#000" stroke-width="2"
+            d="M1,17 L1,23 L23,23 L23,17 M12,2 L12,19 M5,12 L12,19 L19,12" />
+    </svg>
+    <script src="runaway.js"></script>
+    <script>
+        function download() {
+            const image = tempCanvas.toDataURL('image/png');
+            const link = document.createElement('a');
+            link.download = 'my-art.png';
+            link.href = image;
+            link.click();
+        }
+    </script>
+</body>
+
+</html>
