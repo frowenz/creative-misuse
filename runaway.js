@@ -20,7 +20,7 @@ var isButtonMovedFirstTime = [false];
 let vx = [0];
 let vy = [0];
 const friction = 0.95;
-const threshold = 200;
+const threshold = 100;
 let hue = 0;
 
 function getDistance(x1, y1, x2, y2) {
