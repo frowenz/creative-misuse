@@ -1,1 +1,1 @@
-# [doing-it-wrong](https://frowenz.github.io/creative-misuse/)
+# [creative-misuse](https://frowenz.github.io/creative-misuse/)
